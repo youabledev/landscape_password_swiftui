@@ -15,7 +15,7 @@ struct PasswordView: View {
             Spacer()
             PasswordInfoView(inputPasswordCount: $passwordViewModel.inputPassword)
             Spacer()
-            PasswordKeypadView(isOn: passwordViewModel.isOn) { newIsOn in
+            PasswordKeypadView(inputPassword: $passwordViewModel.inputPassword, isOn: passwordViewModel.isOn) { newIsOn in
                 passwordViewModel.isOn = newIsOn
             }
         }

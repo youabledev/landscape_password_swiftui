@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PasswordInfoView: View {
-    @Binding var inputPasswordCount: [Int]
+    @Binding var inputPasswordCount: [String]
     
     var body: some View {
         VStack(spacing: 0) {
@@ -32,5 +32,5 @@ struct PasswordInfoView: View {
 }
 
 #Preview {
-    PasswordInfoView(inputPasswordCount: .constant([2]))
+    PasswordInfoView(inputPasswordCount: .constant(["2"]))
 }

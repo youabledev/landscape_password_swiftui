@@ -15,9 +15,10 @@ struct PasswordKeypadView: View {
         [" ", "0", " "]
     ]
     
+    @Binding var inputPassword: [String]
+    
     let isOn: [[Bool]]
     let isOnChanged: (([[Bool]]) -> ())
-    
     
     var body: some View {
         VStack(spacing: 0) {
@@ -25,10 +26,12 @@ struct PasswordKeypadView: View {
                 HStack(spacing: 0) {
                     ForEach(0..<numbers[rowIndex].count, id: \.self) { columnIndex in
                         Button {
-                            print(numbers[rowIndex][columnIndex])
                             var newIsOn = isOn
                             newIsOn[rowIndex][columnIndex].toggle()
                             isOnChanged(newIsOn)
+                            
+                            let value = numbers[rowIndex][columnIndex]
+                            inputPassword.append(value)
                         } label: {
                             if rowIndex == numbers.count - 1 && columnIndex == numbers[rowIndex].count - 1 {
                                 Image(systemName: "eraser")
@@ -51,11 +54,11 @@ struct PasswordKeypadView: View {
 }
 
 #Preview {
-    PasswordKeypadView(isOn:
-        [
-            [false, false, false],
-            [false, true, false],
-            [false, false, false],
-            [false, false, false]
-        ], isOnChanged: { _ in })
+    PasswordKeypadView(inputPassword: .constant([""]), isOn:
+                        [
+                            [false, false, false],
+                            [false, true, false],
+                            [false, false, false],
+                            [false, false, false]
+                        ], isOnChanged: { _ in })
 }
