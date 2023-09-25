@@ -11,7 +11,7 @@ import SwiftUI
 struct kakaopassword_swiftuiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PasswordView()
         }
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C1207C52AC1D85F004D1A8A /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1207C42AC1D85F004D1A8A /* PasswordViewModel.swift */; };
+		6C1207C72AC1D8B9004D1A8A /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1207C62AC1D8B9004D1A8A /* PasswordView.swift */; };
+		6C1207C92AC1D8D2004D1A8A /* PasswordInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1207C82AC1D8D2004D1A8A /* PasswordInfoView.swift */; };
+		6C1207CB2AC1DA0D004D1A8A /* PasswordKeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1207CA2AC1DA0D004D1A8A /* PasswordKeypadView.swift */; };
 		6C51F6AA2AB9D35200C18CBB /* kakaopassword_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C51F6A92AB9D35200C18CBB /* kakaopassword_swiftuiApp.swift */; };
 		6C51F6AC2AB9D35200C18CBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C51F6AB2AB9D35200C18CBB /* ContentView.swift */; };
 		6C51F6AE2AB9D35600C18CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C51F6AD2AB9D35600C18CBB /* Assets.xcassets */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C1207C42AC1D85F004D1A8A /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
+		6C1207C62AC1D8B9004D1A8A /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
+		6C1207C82AC1D8D2004D1A8A /* PasswordInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInfoView.swift; sourceTree = "<group>"; };
+		6C1207CA2AC1DA0D004D1A8A /* PasswordKeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordKeypadView.swift; sourceTree = "<group>"; };
 		6C51F6A62AB9D35200C18CBB /* kakaopassword_swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kakaopassword_swiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C51F6A92AB9D35200C18CBB /* kakaopassword_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kakaopassword_swiftuiApp.swift; sourceTree = "<group>"; };
 		6C51F6AB2AB9D35200C18CBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +46,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C1207C22AC1D7F7004D1A8A /* LandscapeManage */ = {
+			isa = PBXGroup;
+			children = (
+				6C51F6B72AB9D42200C18CBB /* InfoView.swift */,
+				6C51F6B92AB9D58F00C18CBB /* KeypadView.swift */,
+				6C51F6BB2AB9DD2900C18CBB /* LandscapeManageView.swift */,
+				6C51F6AB2AB9D35200C18CBB /* ContentView.swift */,
+			);
+			path = LandscapeManage;
+			sourceTree = "<group>";
+		};
+		6C1207C32AC1D811004D1A8A /* DataFlow */ = {
+			isa = PBXGroup;
+			children = (
+				6C1207C42AC1D85F004D1A8A /* PasswordViewModel.swift */,
+				6C1207C82AC1D8D2004D1A8A /* PasswordInfoView.swift */,
+				6C1207CA2AC1DA0D004D1A8A /* PasswordKeypadView.swift */,
+				6C1207C62AC1D8B9004D1A8A /* PasswordView.swift */,
+			);
+			path = DataFlow;
+			sourceTree = "<group>";
+		};
 		6C51F69D2AB9D35200C18CBB = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				6C51F6A92AB9D35200C18CBB /* kakaopassword_swiftuiApp.swift */,
-				6C51F6B72AB9D42200C18CBB /* InfoView.swift */,
-				6C51F6B92AB9D58F00C18CBB /* KeypadView.swift */,
-				6C51F6BB2AB9DD2900C18CBB /* LandscapeManageView.swift */,
-				6C51F6AB2AB9D35200C18CBB /* ContentView.swift */,
+				6C1207C22AC1D7F7004D1A8A /* LandscapeManage */,
+				6C1207C32AC1D811004D1A8A /* DataFlow */,
 				6C51F6AD2AB9D35600C18CBB /* Assets.xcassets */,
 				6C51F6AF2AB9D35600C18CBB /* Preview Content */,
 			);
@@ -146,7 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C1207CB2AC1DA0D004D1A8A /* PasswordKeypadView.swift in Sources */,
 				6C51F6BA2AB9D58F00C18CBB /* KeypadView.swift in Sources */,
+				6C1207C72AC1D8B9004D1A8A /* PasswordView.swift in Sources */,
+				6C1207C52AC1D85F004D1A8A /* PasswordViewModel.swift in Sources */,
+				6C1207C92AC1D8D2004D1A8A /* PasswordInfoView.swift in Sources */,
 				6C51F6AC2AB9D35200C18CBB /* ContentView.swift in Sources */,
 				6C51F6B82AB9D42200C18CBB /* InfoView.swift in Sources */,
 				6C51F6BC2AB9DD2900C18CBB /* LandscapeManageView.swift in Sources */,
